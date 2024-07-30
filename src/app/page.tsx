@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <main className="custom-container">    
       <Navbar/>
-      <HeroSection/>
-      <AboutMe />
+      {/* <HeroSection/> */}
+      {/* <AboutMe /> */}
       <Projects />
-      <Articles />
-      <Footer />
+      {/* <Articles /> */}
+      {/* <Footer /> */}
     </main>
   );
 }
