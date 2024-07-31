@@ -10,7 +10,14 @@ import {
   FaCss3Alt,
 } from "react-icons/fa";
 import Typography from "./ui/Typography";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "./ui/button";
 
 const projectData = [
   {
@@ -53,16 +60,16 @@ const a = {
     // { label: "GitHub", icon: FaGithub },
     // { label: "CSS3", icon: FaCss3Alt },
   ],
-}
-const imageUrl = "https://www.probuilder.com/sites/default/files/pb/project%20management.jpg"
-const title = "Create Project"
-const description = "Deploy your new project in one-click."
+};
+const imageUrl =
+  "https://www.probuilder.com/sites/default/files/pb/project%20management.jpg";
+const title = "Create Project";
+const description = "Deploy your new project in one-click.";
 // const tags = []
 
 export const Projects: React.FC = () => {
   return (
     <section>
-     
       {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {projectData.map((project, index) => (
           <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center`}>
@@ -75,22 +82,41 @@ export const Projects: React.FC = () => {
           </div>
         ))}
       </div> */}
+
+
       <div className="flex justify-between w-full">
-        <div className="flex flex-col gap-6 justify-center w-[40%]">
-        <div className="mb-8">
-        <Typography variant="h2" text="All Creative Works." />
-        <Typography variant="p" text="Here's some of my projects that I have worked on." className="text-zinc-500" />
-        <Typography variant="p" text="Explore more" className="text-green-500" />
-      </div >
+        <div className="flex flex-col gap-6 mt-12 w-[40%]">
+          <div className="mb-12 ">
+            <Typography variant="h2" text="All Creative Works." />
+            <Typography
+              variant="p"
+              text="Here's some of my projects that I have worked on."
+              className="text-zinc-500"
+            />
+            <Typography
+              variant="p"
+              text="Explore more"
+              className="text-green-500"
+            />
+          </div>
 
           <Card>
             <CardHeader>
-              {imageUrl && <img src={imageUrl} alt={title} className="w-full h-32 object-cover" />}
+              {imageUrl && (
+                <img
+                  src={imageUrl}
+                  alt={title}
+                  className="w-full h-32 object-cover"
+                />
+              )}
               <Typography variant="h3" text={title} />
-              <Typography variant="p" text={description} className="text-gray-600" />
+              <Typography
+                variant="p"
+                text={description}
+                className="text-gray-600"
+              />
             </CardHeader>
-            <CardContent>
-            </CardContent>
+            <CardContent></CardContent>
             <CardFooter className="flex justify-between">
               {a.tags.length > 0 && (
                 <div className="flex space-x-2 gap-5">
@@ -111,12 +137,21 @@ export const Projects: React.FC = () => {
         <div className=" flex flex-col gap-6 w-[40%] ">
           <Card>
             <CardHeader>
-              {imageUrl && <img src={imageUrl} alt={title} className="w-full h-32 object-cover" />}
+              {imageUrl && (
+                <img
+                  src={imageUrl}
+                  alt={title}
+                  className="w-full h-32 object-cover"
+                />
+              )}
               <Typography variant="h3" text={title} />
-              <Typography variant="p" text={description} className="text-gray-600" />
+              <Typography
+                variant="p"
+                text={description}
+                className="text-gray-600"
+              />
             </CardHeader>
-            <CardContent>
-            </CardContent>
+            <CardContent></CardContent>
             <CardFooter className="flex justify-between">
               {a.tags.length > 0 && (
                 <div className="flex space-x-2 gap-5">
@@ -136,12 +171,21 @@ export const Projects: React.FC = () => {
 
           <Card>
             <CardHeader>
-              {imageUrl && <img src={imageUrl} alt={title} className="w-full h-32 object-cover" />}
+              {imageUrl && (
+                <img
+                  src={imageUrl}
+                  alt={title}
+                  className="w-full h-32 object-cover"
+                />
+              )}
               <Typography variant="h3" text={title} />
-              <Typography variant="p" text={description} className="text-gray-600" />
+              <Typography
+                variant="p"
+                text={description}
+                className="text-gray-600"
+              />
             </CardHeader>
-            <CardContent>
-            </CardContent>
+            <CardContent></CardContent>
             <CardFooter className="flex justify-between">
               {a.tags.length > 0 && (
                 <div className="flex space-x-2 gap-5">
@@ -161,11 +205,11 @@ export const Projects: React.FC = () => {
         </div>
       </div>
 
-
-
-
-
-
+      <div className="flex items-center justify-center  text-center mt-10">
+        <Button className=" bg-zinc-900 hover:bg-zinc-800 text-zinc-200 ">
+          Explore More
+        </Button>
+      </div>
     </section>
   );
 };

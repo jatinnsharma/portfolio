@@ -1,0 +1,11 @@
+
+@keyframes colorChange {
+    0%, 100% { color: white; }
+    50% { color: rgb(7, 161, 7); }
+  }
+  
+  .animated-text {
+    animation: colorChange 4s ease-in-out infinite; /* Changed duration to 1s */
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+  }

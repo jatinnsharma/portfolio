@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between p-4  items-center border-b border-zinc-800">
       {/* Logo */}
-      <div className="satisfy-regular text-4xl cursor-pointer text-green-500 hover:text-green-600">Logo</div>
+      <div className="satisfy-regular text-4xl cursor-pointer text-green-500 hover:text-green-600">Jatin</div>
       {/*Navbar items */}
       <ul className="flex gap-10 items-center">
         <li>
