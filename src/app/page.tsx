@@ -9,12 +9,12 @@ import Skill from "@/components/Skill";
 export default function Home() {
   return (
     <main className="custom-container">    
-      <Navbar/>
       <HeroSection/>
       <Skill />
       <AboutMe />
-      <Projects />
-      <Articles />
+      {/* <Projects /> */}
+      {/* <Articles /> */}
+      <Navbar/>
       <Footer />
     </main>
   );

@@ -40,7 +40,12 @@ export const HeroSection = () => {
           {/* <span className="text-yellow-500"> ⚡ </span> */}
           <span className="text-yellow-500"> 🚀 </span>
           Currently working as Software Engineer at{" "}
-          <span className="text-green-500">CTS.</span>
+
+            <a href={'https://www.linkedin.com/company/codetribesolutions/posts/?feedView=all'} target="_blank">
+          <span className="text-green-500">
+            CTS
+          </span>
+            </a>
           <br />
           {/* <span className="text-sm">jatinsharma2231@gmail.com</span> */}
         </span>
@@ -48,13 +53,13 @@ export const HeroSection = () => {
       
       {/* Social links*/}
       <ul className="flex gap-5">
-        <li>
+        {/* <li>
           <Link href="https://github.com/jatinnsharma" target="_blank">
             <Button className="bg-zinc-900 text-zinc-50 hover:bg-zinc-800 ">
               <FaGithub className="mr-2 text-green-500" /> Let's work{" "}
             </Button>
           </Link>
-        </li>
+        </li> */}
         <li>
           <a href="https://github.com/jatinnsharma" target="_blank">
             <Button className="bg-zinc-900 text-zinc-50 hover:bg-zinc-800 ">

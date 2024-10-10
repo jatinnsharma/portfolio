@@ -1,36 +1,30 @@
-import { SkillContainer } from '@/helper/SkillContainer';
-import React from 'react';
-import Typography from './ui/Typography';
+import React from 'react'
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { skills } from '@/lib/constants'
 
-const Skill = () => {
+export default function Skill() {
   return (
-    <div className='mb-20'>
-      <Typography variant='h3' text='Skills' className='mb-4'/>
-       <div className='grid grid-cols-3'>
-       <SkillContainer 
-         title="Apps" 
-         content={[
-           "Browser apps, websites, mobile and cross-platform desktop app development.",
-           "From SSG, SSR to SPAs, I have extensive experience optimizing for all rendering methods."
-         ]}
-       />
-       <SkillContainer 
-         title="Design" 
-         content={[
-           "UI/UX design with a focus on creating user-friendly and aesthetically pleasing interfaces.",
-           "Proficient in tools like Figma, Adobe XD, and Sketch."
-         ]}
-       />
-       <SkillContainer 
-         title="DevOps" 
-         content={[
-           "Experience with CI/CD pipelines, containerization, and cloud deployments.",
-           "Skilled in using tools like Docker, Kubernetes, and Jenkins."
-         ]}
-       />
-       </div>
+    <div className="space-y-8 mb-20">
+      <h2 className="text-3xl font-bold tracking-tight">Skills</h2>
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {skills.map((skill, index) => (
+          <Card key={index}>
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                {skill.title}
+              </CardTitle>
+              {skill.icon}
+            </CardHeader>
+            <CardContent>
+              <ul className="list-disc pl-5 space-y-1">
+                {skill.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="text-sm">{item}</li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
     </div>
-  );
+  )
 }
-
-export default Skill;

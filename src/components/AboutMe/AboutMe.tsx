@@ -11,12 +11,18 @@ export const AboutMe = () => {
             About Me
           </h2>
           <p className="text-lg mb-4">
-            Hey! I'm Jatin Sharma, A passionate Software developer with 1 years
+            Hey! I'm Jatin Sharma, A passionate Software developer with more than 1 years
             of experiences in a wide range of disciplines, mainly concerning the
             web.
           </p>
           <p className="text-lg mb-4">
-            Currently i work as Junior Software Engineer at CTS which is where
+            Currently i work as Software Engineer at{" "} 
+            <a href={'https://www.linkedin.com/company/codetribesolutions/posts/?feedView=all'} target="_blank">
+          <span className="text-green-500">
+            CTS{" "} 
+          </span>
+            </a>            
+             which is where
             my passion for project and development converge.
             <br />
             <br />
@@ -25,9 +31,6 @@ export const AboutMe = () => {
             programming and i always try to improve myself. I love study new
             languages and take courses in programming(devops right now).
           </p>
-          {/* <p className="text-lg mb-4">
-          When I'm not coding I play games with my friends, watch some show on Netflix, or if the weather's good, play basketball! 🏀
-          </p> */}
           <p className="animated-text">Shine bright, always.</p>
         </div>
 
