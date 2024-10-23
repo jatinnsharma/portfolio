@@ -24,10 +24,10 @@ export const HeroSection = () => {
       </div>
 
       <p className="text-4xl  font-bold">
-        Software Engineer.
+        Software Engineer.{" "}
         <span className="text-zinc-400">
-          Learning about web and trying to help out
-          <br /> other devs in the process.
+        Learning about web and 
+          <br /> helping other devs.
         </span>
       </p>
       <p className="text-2xl">
